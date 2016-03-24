@@ -1,0 +1,31 @@
+{
+  "name": "stepx",
+  "version": "1.0.0",
+  "description": "Steps manager for JavaScript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node_modules/.bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunoleaomaia/stepx.git"
+  },
+  "keywords": [
+    "step",
+    "sequence",
+    "promise"
+  ],
+  "author": {
+    "name": "Bruno Maia",
+    "email": "brunoleaomaia@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brunoleaomaia/stepx/issues"
+  },
+  "homepage": "https://github.com/brunoleaomaia/stepx#readme",
+  "devDependencies": {
+    "mocha": "^2.4.5",
+    "should": "^8.3.0"
+  }
+}

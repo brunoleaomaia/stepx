@@ -1,12 +1,6 @@
-# Stepx
-Steps manager for JavaScript.
-
-## Example
-
-```javascript
 var fs = require('fs'),
 	path = require('path'),
-	Stepx = require('stepx'),
+	Stepx = require('./index'),
 	content = '';
 
 //Create a Steps Manager
@@ -50,20 +44,3 @@ stepx.add(function(){
 
 //Starts the Steps Execution
 stepx.start();
-```
-
-## Methods
-
-- `add(fn [, id])`
-	- Add a function to the Manager;
-- `next()`
-	- Run the next step;
-- `goto(index)`
-	- Go to the step at the index (number/id) and run;
-- `start()`
-	- Starts the execution of the steps;
-	- Fire `onStart` event;
-- `finish()`
-	- Ends the execution of the steps;
-	- Fire `onFinish` event;
-	- The method `next()` on last step fires onFinish event too;
